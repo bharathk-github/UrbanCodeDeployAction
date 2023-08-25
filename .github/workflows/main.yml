@@ -1,9 +1,5 @@
 on:
   workflow_dispatch:
-# on:
-#   push:
-#     branches:
-#       - 'main'
 jobs:
   hello_world_job:
     runs-on: self-ubuntu
@@ -18,7 +14,7 @@ jobs:
           applicationProcess: 'Install'
           environment: 'DEV'
           properties: '{"prop1":"${{ vars.PROP1 }}", "prop2":"${{ vars.PROP2 }}"}'
-          snapshot: ''
+          snapshot: 'snapshot-1'
           versions: ''
           hostname: '${{ secrets.UCD_HOST }}'
           username: '${{ secrets.UCD_USERNAME }}'
