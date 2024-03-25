@@ -19,4 +19,5 @@ jobs:
           hostname: '${{ secrets.UCD_HOST }}'
           username: '${{ secrets.UCD_USERNAME }}'
           password: '${{ secrets.UCD_PASSWORD }}'
+          disableSSLVerification: True
 
