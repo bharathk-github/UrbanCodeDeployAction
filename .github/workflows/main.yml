@@ -11,11 +11,11 @@ jobs:
         uses: bharathk-github/UrbanCodeDeployAction@v1.28
         with:
           application: 'MYAPP'
-          applicationProcess: 'Install'
+          applicationProcess: 'DEPLOY-MYAPP'
           environment: 'DEV'
           properties: '{"prop1":"${{ vars.PROP1 }}", "prop2":"${{ vars.PROP2 }}"}'
-          snapshot: 'snapshot-1'
-          versions: ''
+          snapshot: ''
+          versions: 'QA-JCL'
           hostname: '${{ secrets.UCD_HOST }}'
           username: '${{ secrets.UCD_USERNAME }}'
           password: '${{ secrets.UCD_PASSWORD }}'
